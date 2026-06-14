@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "clinical-trials"
+version = "0.1.0"
+description = "A Python library for searching clinical trial data"
+authors = ["Clinical Trials Research Tool"]
+readme = "README.md"
+packages = [{include = "clinical_trials"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytrials = "^0.3.0"
+requests = "^2.28.0"
+rich = "^13.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^22.0.0"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+clinical-trials = "clinical_trials.cli.main:main"
