@@ -1,0 +1,26 @@
+{
+  "nctId": "NCT06532643",
+  "briefTitle": "Safety and Efficacy of Anti-CD20/CD30 CAR-T Cells in Subjects with Relapsed/Refractory Lymphoma",
+  "officialTitle": "An Exploratory Clinical Study of Autologous Anti-CD20/CD30 Chimeric Antigen Receptor T Cells (anti-CD20/CD30 CAR-T Cells) in Subjects with Relapsed/Refractory Lymphoma",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "This study is an exploratory clinical trial of a single-center, open-label, single-dose treatment of anti-CD20/CD30-CAR-T cells in subjects with relapsed/refractory lymphoma.",
+  "detailedDescription": "The study will enroll subjects with CD20 and CD30-positive lymphoma, CD20-positive lymphoma, or CD30-positive Hodgkin lymphoma. Subjects will receive a single infusion of anti-CD20/CD30-CAR-T cells after screening, PBMC collection, and lymphodepleting chemotherapy. Toxicity will be assessed according to the Common Terminology Criteria for Adverse Events (CTCAE, version 5.0) from the National Cancer Institute. Safety of anti-CD20/CD30-CAR-T cell therapy will be evaluated through laboratory tests, including 12-lead electrocardiograms, vital sign checks, etc. Additionally, blood samples will be collected from subjects to study cellular pharmacokinetics and explore the effects of cell therapy on ferritin, C-reactive protein, and related cytokines.",
+  "condition": [
+    "Relapsed/Refractory Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 9,
+  "locations": {
+    "China": [
+      "Hefei"
+    ]
+  },
+  "sponsor": [
+    "Shanghai First Song Biotechnology Co., LTD"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "nctId": "NCT06090864",
+  "briefTitle": "ATLCAR.CD30.CCR4 for CD30+ HL ATLCAR.CD30.CCR4 Cells",
+  "officialTitle": "The Administration of T Lymphocytes Expressing the CD30 Chimeric Antigen Receptor (CAR) and CCR4 for Relapsed/Refractory CD30+ Hodgkin s Lymphoma",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "Despite the progress in the therapy, Hodgkin's Lymphoma (HL) remains fatal for more than 15% of patients. Even in patients who are cured, the morbidity of therapy is substantial and long-lasting. New therapeutic agents are required therefore not only to further reduce mortality but also to alleviate morbidity.\n\nThe majority of HL express the CD30 antigens. CD30 expression is routinely used for the diagnosis of HL. Preclinical observations support CD30 as a viable target of CAR-T therapy. This phase Ib/II study was conducted based on these observations.\n\nThe purpose of this study is to determine the tolerability of ATLCAR.CD30.CCR4 cells in subjects with Hodgkin's Lymphoma and identify a recommended dose for further.\n\nThis is a single-center, open-label phase Ib/II trial that uses a 3+3 design to identify a recommended phase 2 dose (RP2D) of ATLCAR.CD30.CCR4 cells in Hodgkin's Lymphoma. The phase II portion is designed to determine the PFS of ATLCAR.CD30.CCR4 in Hodgkin's Lymphoma.\n\nSubjects will be enrolled on 1 of 3 dose levels as determined by a 3+3 design. Up to 25 evaluable subjects may then be enrolled in the phase II portion of the study. Subjects may have cells procured to manufacture the ATLCAR.CD30.CCR4 cells if they meet eligibility for procurement. During the time period necessary to manufacture the ATLCAR.CD30.CCR4 cells, Subjects will be allowed to receive standard-of-care bridging therapy at the discretion of their local oncologist. Prior to cell infusion, subjects will undergo additional eligibility evaluations, and then if eligible, will undergo lymphodepletion followed by cell infusion 2-14 days later. Subjects will then be followed for 15 years as is required for studies involving gene transfer experiments.",
+  "detailedDescription": null,
+  "condition": [
+    "Hodgkin Lymphoma",
+    "Relapse",
+    "Refractory"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 31,
+  "locations": {
+    "United States": [
+      "Chapel Hill"
+    ]
+  },
+  "sponsor": [
+    "UNC Lineberger Comprehensive Cancer Center"
+  ]
+}

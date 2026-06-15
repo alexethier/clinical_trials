@@ -1,0 +1,27 @@
+{
+  "nctId": "NCT06494371",
+  "briefTitle": "A Study of LCAR-HL30 in Subjects With Relapsed/Refractory Hodgkin's Lymphoma and Anaplastic Large Cell Lymphoma",
+  "officialTitle": "An Open-label Clinical Study to Evaluate the Safety, Tolerability, and Efficacy of CD30-Targeted LCAR-HL30 Cells in Patients With Relapsed/Refractory Hodgkin's Lymphoma and Anaplastic Large Cell Lymphoma",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "This is a prospective, single-arm, open-label, exploratory clinical study of LCAR-HL30 in adult subjects with relapsed/refractory Hodgkin's Lymphoma and Anaplastic Large Cell Lymphoma.",
+  "detailedDescription": "This is a prospective, single-arm, open-label exploratory clinical study to evaluate the safety, tolerability, pharmacokinetics and anti-tumor efficacy profiles of LCAR-HL30, a chimeric antigen receptor(CAR)-T cell therapy in subjects with relapsed/refractory Hodgkin's Lymphoma and Anaplastic Large Cell Lymphoma. Patients who meet the eligibility criteria will receive LCAR-HL30 infusion. The study will include the following sequential stages: screening, pre-treatment (cell product preparation: lymphodepleting chemotherapy), treatment and follow-up.",
+  "condition": [
+    "Hodgkin's Lymphoma",
+    "Anaplastic Large Cell Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 32,
+  "locations": {
+    "China": [
+      "Shanghai"
+    ]
+  },
+  "sponsor": [
+    "Ruijin Hospital"
+  ]
+}

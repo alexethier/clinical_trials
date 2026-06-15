@@ -1,0 +1,26 @@
+{
+  "nctId": "NCT07138547",
+  "briefTitle": "GSL Synthetase Inhibitor Eliglustat Combined With CD30 Target Immunotherapy for the Treatment of of CD30+ Lymphoma",
+  "officialTitle": "GSL Synthetase Inhibitor Eliglustat Combined With CD30 Target Immunotherapy for the Treatment of of CD30+ Lymphoma: an Open-Label, Randomized, Phase I/II Study",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "Targeted therapy against the CD30 molecule has achieved some progress in CD30-positive Hodgkin lymphoma, but its efficacy remains unsatisfactory. Previous studies have demonstrated that N-glycan modifications in the extracellular domain of target proteins can disrupt immune synapse formation with CAR-T cells. Our preliminary research has shown that ablation of N-glycans on CD30 enhances the anti-tumor effect of CD30-targeted therapy.It is hypothesized that Eliglustat, by inhibiting GSL synthesis,may potentiate the anti-tumor effect. Consequently,we designed and initiated a single-center, open-label phase I/II clinical study to evaluate the efficacy and feasibility of Eliglustat combined with CD30 targeted immunotherapy in patients with CD30-positive lymphoma. The primary endpoint of this study is the safety and efficacy of Eliglustat combined with CD30 targeted therapies.",
+  "detailedDescription": "CD30-targeted therapies, including Brentuximab Vedotin (BV) and CD30-targeted CAR-T cells, have demonstrated limited efficacy in Hodgkin lymphoma,facing challenges such as the lack of durable responses with BV and low complete response (CR) rates with CD30 CAR-T cells. Existing research indicates that N-glycan modifications in the extracellular domain of target proteins may mediate resistance of tumor cells to CAR-T cell therapy.Our preliminary studies have demonstrated that disrupting the CD30 N-glycans in HL tumor cells enhances the anti-tumor effect of CD30-targeted therapy. Based on this, we hypothesize that the glucosylceramide synthase (GSL synthesis) inhibitor Eliglustat, by inhibiting GSL synthesis, may affect N-glycan structure of target proteins and consequently enhancing anti-tumor efficacy.\n\nTo further validate the role of Eliglustat in modulating anti-tumor therapy for CD30-positive lymphoma, we designed and initiated a single-center, open label phase I/II clinical study. This study aims to evaluate the efficacy and feasibility of Eliglustat combined with CD30 immunotherapy in patients with CD30-positive lymphoma.Primary Endpoints:1）safety and of Eliglustat combined with CD30 targeted therapies；2）CR rate (%) in the CAR-T cell plus Eliglustat treatment group; Progression-free survival (PFS) in the BV plus Eliglustat treatment group.Secondary Endpoints: 1)Other efficacy indicators (e.g., Objective Response Rate \\[ORR\\]) of Eliglustat combined with CD30- targeted molecular therapy; 2) Efficacy biomarkers.",
+  "condition": [
+    "Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 40,
+  "locations": {
+    "China": [
+      "Beijing"
+    ]
+  },
+  "sponsor": [
+    "Chinese PLA General Hospital"
+  ]
+}

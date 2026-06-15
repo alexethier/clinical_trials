@@ -1,0 +1,35 @@
+{
+  "nctId": "NCT05092451",
+  "briefTitle": "Phase I/II Study of CAR.70- Engineered IL15-transduced Cord Blood-derived NK Cells in Conjunction With Lymphodepleting Chemotherapy for the Management of Relapse/Refractory Hematological Malignances",
+  "officialTitle": "Phase I/II Study of CAR.70- Engineered IL15-transduced Cord Blood-derived NK Cells in Conjunction With Lymphodepleting Chemotherapy for the Management of Relapse/Refractory Hematological Malignances",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "The goal of this clinical research study is to learn about the safety of giving immune cells called natural killer (NK) cells with chemotherapy to patients with leukemia, lymphoma, or multiple myeloma.\n\nImmune system cells (such as NK cells) are made by the body to attack foreign or cancerous cells. Researchers think that NK cells you receive from a donor may react against cancer cells in your body, which may help to control the disease.",
+  "detailedDescription": "Primary Objective:\n\nTo determine the safety, efficacy and optimal cell dose of CAR.70/IL15-transduced CB-NK cells in patients with relapsed/refractory hematological malignances. The efficacy and optimal dose will be identified for individual diseases.\n\nSecondary Objectives:\n\n* To quantify persistence of infused allogeneic donor CAR-transduced CB-derived NK cells in the recipient.\n* To conduct comprehensive immune reconstitution studies.",
+  "condition": [
+    "B-Cell Lymphoma",
+    "Myelodysplastic Syndromes (MDS)",
+    "Acute Myeloid Leukemia (AML)",
+    "Multiple Myeloma",
+    "Plasma Cell Leukemia",
+    "Hodgkin Lymphoma",
+    "T-cell Non-Hodgkin's Lymphoma/ T-cell Acute Lymphoblastic Leukmeia",
+    "Myelodysplastic Syndrome / Chronic Myelomonocytic Leukemia",
+    "Blastic Transformation of Chronic Myeloid Leukemia",
+    "Germ Cell Tumors"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 80,
+  "locations": {
+    "United States": [
+      "Houston"
+    ]
+  },
+  "sponsor": [
+    "M.D. Anderson Cancer Center"
+  ]
+}

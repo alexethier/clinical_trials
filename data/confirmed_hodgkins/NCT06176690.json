@@ -1,0 +1,32 @@
+{
+  "nctId": "NCT06176690",
+  "briefTitle": "Constitutive IL7R (C7R) Modified Banked Allogeneic CD30.CAR EBVSTS for CD30-Positive Lymphomas",
+  "officialTitle": "Constitutive IL7R (C7R) Modified Banked Allogeneic CD30 Chimeric Antigen Receptor Epstein-Barr Virus-Specific T Lymphocytes (CD30.CAR-EBVSTs) in Patients With Relapsed or Refractory CD30-Positive Lymphomas",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "This study involves patients with diffuse large B cell lymphoma (DLBCL), natural killer/T-cell lymphoma (NKTL), or classical Hodgkin lymphoma (cHL) (referred to collectively as lymphoma) whose disease has returned or not responded to treatment.\n\nPrevious research combined antibodies and T cells to treat cancer. Antibodies bind to foreign substances, and T cells are infection-fighting white blood cells that can kill tumor cells. Both approaches have shown promise but have not been sufficient to cure most patients. In prior studies, an antibody targeting CD30, a protein found on some T cells and cancer cells, was joined to T cells through gene transfer to create CD30.CAR T cells.\n\nAnother study showed encouraging responses using CD30.CAR T cells made from a patient's own blood and returned to the same patient (autologous cells). In an ongoing study, patients have been treated with CD30.CAR T cells derived from healthy donors (allogeneic cells), allowing use of banked cells without individualized manufacturing. This approach has shown promising clinical activity with no safety concerns to date.\n\nIn this study, investigators are evaluating CD30.CAR-EBVST cells modified with an additional molecule called C7R, which has been shown in laboratory studies to enhance anti-cancer effects. The study aims to assess the safety and effectiveness of these allogeneic, banked C7R-modified CD30.CAR-EBVST cells and determine whether they may help treat lymphoma.\n\nAs an added safety measure, the modified T cells include a marker called iC9. If significant side effects occur, patients may receive rimiducid, which can eliminate the infused T cells. Rimiducid is not yet FDA approved but has been tested in patients without significant side effects.",
+  "detailedDescription": "This is a Phase 1 dose-escalation study evaluating allogeneic C7R.CD30.CAR-EBVST cells in patients with relapsed or refractory CD30-positive lymphoma.\n\nParticipants are treated in sequential cohorts at one of four dose levels of C7R.CD30.CAR-EBVST cells. Treatment begins at the lowest dose level, and subsequent cohorts are treated at higher dose levels if the preceding dose is determined to be safe. If significant toxicity is observed, dose escalation may be halted, reduced, or discontinued. The relationship between dose level and both safety and potential clinical benefit is evaluated.\n\nPrior to treatment, participants undergo screening evaluations including laboratory testing, imaging studies, and confirmation of CD30 expression. Human leukocyte antigen (HLA) testing is performed to identify the most appropriate partially matched cell line from a bank of allogeneic C7R.CD30.CAR-EBVST products.\n\nParticipants may receive lymphodepleting chemotherapy with cyclophosphamide and fludarabine prior to infusion, as clinically appropriate, to reduce endogenous lymphocytes and support expansion of the infused cells.\n\nC7R.CD30.CAR-EBVST cells are administered as a single intravenous infusion at the assigned dose level. Premedication may be given to reduce the risk of infusion-related reactions. Participants are monitored in the clinical setting following infusion and are required to remain within close proximity to the treatment center for a defined period to allow for monitoring of potential adverse events.\n\nFollowing treatment, participants undergo scheduled follow-up evaluations including physical examinations, laboratory testing, and imaging studies to assess safety and disease status. Blood samples are collected at multiple time points after infusion to evaluate persistence of the infused cells. Tumor assessments are performed using imaging and, when clinically indicated, biopsy.\n\nParticipants are followed longitudinally after treatment, with more frequent assessments early after infusion and less frequent long-term follow-up, for up to 15 years after the most recent infusion.",
+  "condition": [
+    "CD30-Positive Diffuse Large B-Cell Lymphoma",
+    "Anaplastic Large Cell Lymphoma, T Cell and Null Cell Type",
+    "Anaplastic Large Cell Lymphoma, ALK-Positive",
+    "Peripheral T-cell Lymphoma",
+    "Anaplastic Large Cell Lymphoma, ALK-negative",
+    "Non-Hodgkin Lymphoma",
+    "Hodgkin Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 90,
+  "locations": {
+    "United States": [
+      "Houston"
+    ]
+  },
+  "sponsor": [
+    "Baylor College of Medicine"
+  ]
+}

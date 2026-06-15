@@ -1,0 +1,29 @@
+{
+  "nctId": "NCT07451054",
+  "briefTitle": "CD45BE-HSPC + CART-45 Cells",
+  "officialTitle": "Phase 1 Study of Autologous Anti-CD45 CAR T Cells in Combination With CD45 Base Edited HSPCs in Patients With Relapsed or Refractory Hematologic Malignancies",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "This is a phase 1, open-label, dose-finding study to assess the safety, feasibility, pharmacokinetics and preliminary efficacy of autologous base edited anti-CD45 CAR T cells (referred to as \"CART-45 cells\") following an autologous transplant of CD45 base edited hematopoietic stem and progenitor cells (referred to as \"CD45BE-HSPC\") in patients with relapsed or refractory hematologic malignancies.",
+  "detailedDescription": null,
+  "condition": [
+    "B-Cell Non-Hodgkin Lymphoma (NHL)",
+    "Richter's Transformation",
+    "T-Cell Non-Hodgkin Lymphoma",
+    "Hodgkin Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 42,
+  "locations": {
+    "United States": [
+      "Philadelphia"
+    ]
+  },
+  "sponsor": [
+    "University of Pennsylvania"
+  ]
+}

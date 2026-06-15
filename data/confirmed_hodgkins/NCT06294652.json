@@ -1,0 +1,26 @@
+{
+  "nctId": "NCT06294652",
+  "briefTitle": "AGMT Austrian Lymphoma Registry",
+  "officialTitle": "AGMT Austrian Lymphoma Registry",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "OBSERVATIONAL",
+  "primaryPurpose": null,
+  "briefSummary": "Lymphomas are a group of cancers that originate in the lymphatic system, a key component of the immune system. They can be broadly categorized into two main types: Hodgkin lymphoma (HL) and non-Hodgkin lymphoma (NHL).\n\nThere are different subtypes of HL, including classical Hodgkin lymphoma (cHL) and nodular lymphocyte-predominant Hodgkin lymphoma (NLPHL). The subtypes of cHL include nodular sclerosis, mixed cellularity, lymphocyte-rich, and lymphocyte-depleted.\n\nNon-Hodgkin lymphomas are more diverse and comprise a wide range of subtypes, each with distinct genetic, molecular, and clinical features. Common subtypes of NHL include Diffuse large B-cell lymphoma (DLBCL), Follicular lymphoma (FL), Mantle cell lymphoma (MCL), Chronic lymphocytic leukemia (CLL), myeloma, and other rarer subgroups.\n\nMany of these diseases typically present with lymph node enlargement, bone marrow infiltration, general and lymphoma subtype specific symptoms and laboratory abnormalities.\n\nNovel agents have improved the prognosis of high-risk lymphoma patients in the front-line and relapsed setting and more accurate prognostic tools enable less intensive treatment for low-risk patients, while maintaining their good prognosis.\n\nLymphoma disease have not been systematically assessed in Austria to date. This medical registry of the AGMT is thus the first Austrian-wide standardized documentation of epidemiology, clinical course and molecular and other biologic data of this disease. As lymphomas are a very heterogeneous group, not all subtypes will always be documented simultaneously in this registry. Which lymphoma subtype is to be documented can change over time, depending on which clinical question is currently in focus.",
+  "detailedDescription": "This registry is designed as international multicenter observational cohort of patients with lymphoma. Information on patient´s clinical presentation, tests, diagnosis, and treatment will be obtained through extraction of data from existing patient medical charts. Longitudinal follow-up data, including survival and tumor progression, will also be extracted from patient medical charts. This patient follow-up data will be obtained until patient death or loss to follow-up.\n\nFor documentation in the registry, no further diagnostic or therapeutic measures are required than those already necessary in general. Participation in the registry must not interfere with treatment routines. Only routine data, which has already been recorded in the patient's medical chart, is transferred to the electronic Case Report Forms (eCRF). To maintain patient confidentiality, each patient will be assigned a unique patient identifying number upon enrollment; this number will accompany the patient's medical and other registry information throughout the lifetime of the registry.\n\nA written consent must be obtained prior to the input of data. No informed consent is required from deceased patients.",
+  "condition": [
+    "Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 4000,
+  "locations": {
+    "Austria": [
+      "Salzburg"
+    ]
+  },
+  "sponsor": [
+    "Arbeitsgemeinschaft medikamentoese Tumortherapie"
+  ]
+}

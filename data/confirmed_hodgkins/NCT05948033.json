@@ -1,0 +1,26 @@
+{
+  "nctId": "NCT05948033",
+  "briefTitle": "CD70 Targeted CAR-T Cells in CD70 Positive Relapsed/Refractory Lymphoma",
+  "officialTitle": "Phase I/II Study of CD70 Targeted CAR-T Cell Treatment in CD70 Positive Relapsed/Refractory Lymphoma",
+  "overallStatus": "Recruiting",
+  "phase": null,
+  "studyType": "INTERVENTIONAL",
+  "primaryPurpose": "TREATMENT",
+  "briefSummary": "In this single-center, single-arm,prospective, open-label, phase 1/2 study, the safety and efficacy of autologous CD70 targeted chimeric antigen receptor modified T (CAR-T) cell therapy will be evaluated in patients with CD70 antigen positive Relapsed/Refractory Lymphoma . In this clinical trial, at least 12 eligible patients in dose escalation period will be enrolled to receive 3 doses of CD70-CAR cell therapy according to the \"3+3\" principle. In dose expansion period, additional at most 21 eligible patients will be enrolled to receive CD70-CAR-T cell therapy at dose of recommended phase 2 dose(RP2D).",
+  "detailedDescription": "CAR-T cell therapy has been identified as a breakthrough therapy in hematologic malignancies,especially anti-CD19 CAR-T cell therapy in the treatment of r/r B-NHL has achieved remarkable efficacy.However, relapse with CD19-negative tumor after treatment with anti-CD19 CAR-T cells has been reported in different types of B-cell lymphoid malignancies, with a percentage up to 38% in patients with non-Hodgkin lymphoma (NHL).At present, the CAR-T cell treatment for HL is mainly confined to CD30 antigen,with an objective response rate (ORR) only 38%\\~62%. Therefore, a more effective treatment strategy is needed for these patients.\n\nCD70, the membrane-binding ligand of the CD27 (a tumor necrosis factor receptor superfamily), has been reported to mediate tumour cell proliferation and be expressed on the malignant cells of diffuse large B-cell lymphoma (DLBCL)，mantle cell lymphoma (MCL) and follicular lymphomas (FL), as well as Hodgkin lymphoma, etc,but rarely on normal B cells or T cells,indicating CD70 targeted treament has emerged as potentialnovel immunotherapeutic strategy.Preclinical study demonstrated CD70-CAR-T cells represent a new therapeutic option for the treatment of patients with CD19-negative recurrence of lymphoma.Based on the preclinical data, we conduct this clinical trial in order to test the the safety profiles and anti-tumor activities of CD70-CAR-T cells in vivo. In dose escalation period, at least 12 eligible patients will be enrolled and receive 3 doses of CD70-CAR-T cell therapy (1 × 10\\^6 cells/kg, 3 × 10\\^6 cells/kg, 1 × 10\\^7 cells/kg) according to the \"3+3\" principle. In dose expansion period, additional at most 21 eligible patients will be enrolled to receive CD70-CAR-T cell infusion at dose of RP2D, which is determined by data from dose escalation period, including occurrence of dose limiting toxicities(DLT), pharmacokinetics/pharmacodynamics, efficacy and other parameters, to furtherly evaluate the safety and efficacy profiles of CD70-CAR-T cell therapy.",
+  "condition": [
+    "Lymphoma"
+  ],
+  "interventionName": [],
+  "startDate": null,
+  "completionDate": null,
+  "enrollment": 30,
+  "locations": {
+    "China": [
+      "Beijing"
+    ]
+  },
+  "sponsor": [
+    "Chinese PLA General Hospital"
+  ]
+}
