@@ -206,8 +206,8 @@ $RECYCLE.BIN/
 
 # Project specific
 test_basic.py
-*.csv
-*.json
+
+# Other output directories
 results/
 output/
 logs/

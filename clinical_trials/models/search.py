@@ -24,6 +24,7 @@ class SortBy(Enum):
 @dataclass
 class SearchParams:
     """Parameters for clinical trials search"""
+    search_text: Optional[str] = None
     condition: Optional[str] = None
     intervention: Optional[str] = None
     sponsor: Optional[str] = None

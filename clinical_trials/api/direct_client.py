@@ -109,6 +109,10 @@ class DirectClinicalTrialsClient:
             "pageSize": search_params.max_studies
         }
         
+        # Add general search text
+        if search_params.search_text:
+            params["query.term"] = search_params.search_text
+        
         # Add search filters
         if search_params.condition:
             params["query.cond"] = search_params.condition
@@ -212,8 +216,7 @@ class DirectClinicalTrialsClient:
             "startDate": status_module.get("startDateStruct", {}).get("date"),
             "completionDate": status_module.get("primaryCompletionDateStruct", {}).get("date"),
             "enrollment": design_module.get("enrollmentInfo", {}).get("count"),
-            "locationCity": [],
-            "locationCountry": [],
+            "locations": {},
             "sponsor": []
         }
         
@@ -223,17 +226,21 @@ class DirectClinicalTrialsClient:
                 interv.get("name", "") for interv in interventions_module["interventions"]
             ]
         
-        # Extract locations
+        # Extract locations (grouped by country)
         if contacts_module.get("locations"):
-            cities = []
-            countries = []
+            locations_by_country = {}
             for location in contacts_module["locations"]:
-                if location.get("city"):
-                    cities.append(location["city"])
-                if location.get("country"):
-                    countries.append(location["country"])
-            extracted["locationCity"] = cities
-            extracted["locationCountry"] = countries
+                country = location.get("country", "Unknown")
+                city = location.get("city")
+                if city:
+                    if country not in locations_by_country:
+                        locations_by_country[country] = set()
+                    locations_by_country[country].add(city)
+            
+            # Convert to final format with cities under countries
+            extracted["locations"] = {
+                country: list(cities) for country, cities in locations_by_country.items()
+            }
         
         # Extract sponsors
         if sponsors_module.get("leadSponsor"):

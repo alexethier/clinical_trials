@@ -31,6 +31,7 @@ class ClinicalTrialsCLI:
         try:
             # Build search parameters
             search_params = SearchParams(
+                search_text=args.search_text,
                 condition=args.condition,
                 intervention=args.intervention,
                 sponsor=args.sponsor,
@@ -56,11 +57,14 @@ class ClinicalTrialsCLI:
                     console.print(f"[red]Invalid phase: {args.phase}[/red]")
                     return
             
-            # Perform search with progress bar
-            with Progress() as progress:
-                task = progress.add_task("Searching clinical trials...", total=1)
+            # Perform search with progress bar (only for interactive formats)
+            if args.format not in ["json", "yaml", "csv"]:
+                with Progress() as progress:
+                    task = progress.add_task("Searching clinical trials...", total=1)
+                    result = self.client.search(search_params)
+                    progress.update(task, completed=1)
+            else:
                 result = self.client.search(search_params)
-                progress.update(task, completed=1)
             
             # Display results
             self._display_search_results(result, args)
@@ -98,10 +102,15 @@ class ClinicalTrialsCLI:
     def _display_search_results(self, result: SearchResult, args: argparse.Namespace) -> None:
         """Display search results"""
         if not result.studies:
-            console.print("[yellow]No studies found matching your criteria.[/yellow]")
+            if args.format not in ["json", "yaml", "csv"]:
+                console.print("[yellow]No studies found matching your criteria.[/yellow]")
+            else:
+                console.print("[]")  # Empty JSON array for no results
             return
         
-        console.print(f"\n[green]Found {result.total_count} clinical trials[/green]")
+        # Only show summary for interactive formats
+        if args.format not in ["json", "yaml", "csv"]:
+            console.print(f"\n[green]Found {result.total_count} clinical trials[/green]")
         
         # Display format options
         if args.format == "table":
@@ -112,11 +121,13 @@ class ClinicalTrialsCLI:
             self._export_json(result.studies, args.output)
         elif args.format == "csv":
             self._export_csv(result.studies, args.output)
+        elif args.format == "yaml":
+            self._export_yaml(result.studies, args.output)
         else:
             self.formatter.display_studies_list(result.studies, console)
         
-        # Display statistics
-        if args.stats:
+        # Display statistics (only for interactive formats)
+        if args.stats and args.format not in ["json", "yaml", "csv"]:
             self._display_statistics(result)
     
     def _display_statistics(self, result: SearchResult) -> None:
@@ -149,14 +160,37 @@ class ClinicalTrialsCLI:
     
     def _export_json(self, studies: List, output: Optional[str]) -> None:
         """Export studies to JSON"""
-        data = [study.raw_data for study in studies]
+        data = []
+        for study in studies:
+            study_dict = {
+                "nctId": study.nct_id,
+                "briefTitle": study.brief_title,
+                "officialTitle": study.official_title,
+                "overallStatus": study.overall_status.value if study.overall_status else None,
+                "phase": study.phase.value if study.phase else None,
+                "studyType": study.study_type,
+                "primaryPurpose": study.primary_purpose,
+                "briefSummary": study.brief_summary,
+                "detailedDescription": study.detailed_description,
+                "condition": study.conditions,
+                "interventionName": study.interventions,
+                "startDate": study.start_date.strftime("%Y-%m-%d") if study.start_date else None,
+                "completionDate": study.completion_date.strftime("%Y-%m-%d") if study.completion_date else None,
+                "enrollment": study.enrollment,
+                "locations": {
+                    country: [loc.city for loc in study.locations if loc.country == country]
+                    for country in set(loc.country for loc in study.locations if loc.country)
+                } if study.locations else {},
+                "sponsor": [sponsor.name for sponsor in study.sponsors if sponsor.name]
+            }
+            data.append(study_dict)
         
         if output:
             with open(output, 'w') as f:
-                json.dump(data, f, indent=2)
+                json.dump(data, f, indent=2, ensure_ascii=False)
             console.print(f"[green]Results exported to {output}[/green]")
         else:
-            console.print(json.dumps(data, indent=2))
+            print(json.dumps(data, indent=2, ensure_ascii=False))
     
     def _export_csv(self, studies: List, output: Optional[str]) -> None:
         """Export studies to CSV"""
@@ -191,6 +225,53 @@ class ClinicalTrialsCLI:
             console.print(f"[green]Results exported to {output}[/green]")
         else:
             console.print(csv_content)
+    
+    def _export_yaml(self, studies: List, output: Optional[str]) -> None:
+        """Export studies to YAML"""
+        import yaml
+        
+        data = []
+        for study in studies:
+            study_dict = {
+                "nct_id": study.nct_id,
+                "brief_title": study.brief_title,
+                "official_title": study.official_title,
+                "overall_status": study.overall_status.value if study.overall_status else None,
+                "phase": study.phase.value if study.phase else None,
+                "study_type": study.study_type,
+                "conditions": study.conditions,
+                "interventions": study.interventions,
+                "primary_purpose": study.primary_purpose,
+                "brief_summary": study.brief_summary,
+                "detailed_description": study.detailed_description,
+                "enrollment": study.enrollment,
+                "url": study.url,
+                "locations": [
+                    {
+                        "facility": loc.facility,
+                        "city": loc.city,
+                        "state": loc.state,
+                        "country": loc.country,
+                        "zip_code": loc.zip_code
+                    } for loc in study.locations
+                ],
+                "sponsors": [
+                    {
+                        "name": sponsor.name,
+                        "agency_class": sponsor.agency_class
+                    } for sponsor in study.sponsors
+                ]
+            }
+            data.append(study_dict)
+        
+        yaml_content = yaml.dump(data, default_flow_style=False, sort_keys=False)
+        
+        if output:
+            with open(output, 'w') as f:
+                f.write(yaml_content)
+            console.print(f"[green]Results exported to {output}[/green]")
+        else:
+            console.print(yaml_content)
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -203,7 +284,8 @@ def create_parser() -> argparse.ArgumentParser:
     
     # Search command
     search_parser = subparsers.add_parser("search", help="Search for clinical trials")
-    search_parser.add_argument("--condition", "-c", help="Medical condition")
+    search_parser.add_argument("--search-text", "-t", help="General search text (searches across all fields)")
+    search_parser.add_argument("--condition", "-c", help="Medical condition (specific field)")
     search_parser.add_argument("--intervention", "-i", help="Intervention/treatment")
     search_parser.add_argument("--sponsor", "-s", help="Study sponsor")
     search_parser.add_argument("--status", help="Study status")
@@ -212,7 +294,7 @@ def create_parser() -> argparse.ArgumentParser:
     search_parser.add_argument("--city", help="City")
     search_parser.add_argument("--recruiting", action="store_true", help="Recruiting studies only")
     search_parser.add_argument("--max-studies", type=int, default=10, help="Maximum studies to return")
-    search_parser.add_argument("--format", choices=["list", "table", "summary", "json", "csv"], 
+    search_parser.add_argument("--format", choices=["list", "table", "summary", "json", "csv", "yaml"], 
                               default="list", help="Output format")
     search_parser.add_argument("--output", "-o", help="Output file path")
     search_parser.add_argument("--stats", action="store_true", help="Show statistics")

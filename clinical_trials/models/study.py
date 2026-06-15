@@ -99,20 +99,22 @@ class Study:
         brief_title = data.get("briefTitle", "")
         
         # Parse status
-        status_str = data.get("overallStatus", "")
+        status_str = data.get("overallStatus") or ""
         overall_status = None
-        for status in StudyStatus:
-            if status.value.lower() == status_str.lower():
-                overall_status = status
-                break
+        if status_str:
+            for status in StudyStatus:
+                if status.value.lower() == status_str.lower():
+                    overall_status = status
+                    break
         
         # Parse phase
-        phase_str = data.get("phase", "")
+        phase_str = data.get("phase") or ""
         phase = None
-        for p in StudyPhase:
-            if p.value.lower() == phase_str.lower():
-                phase = p
-                break
+        if phase_str:
+            for p in StudyPhase:
+                if p.value.lower() == phase_str.lower():
+                    phase = p
+                    break
         
         # Parse conditions
         conditions = []
@@ -124,7 +126,13 @@ class Study:
         
         # Parse locations
         locations = []
-        if "locationCity" in data and "locationCountry" in data:
+        if "locations" in data:
+            locations_dict = data.get("locations", {})
+            for country, cities in locations_dict.items():
+                for city in cities:
+                    locations.append(Location(city=city, country=country))
+        elif "locationCity" in data:
+            # Fallback for old format
             cities = data.get("locationCity", [])
             countries = data.get("locationCountry", [])
             if not isinstance(cities, list):
